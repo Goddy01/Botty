@@ -1,0 +1,24 @@
+# Live copy trading. RPC comes from HELIUS_API_KEY or RPC_URL below.
+watch = "rpc"
+# Helius Business LaserStream (Geyser gRPC). VPS must be Frankfurt to match this region.
+# cargo run --release --features laserstream
+laserstream_endpoint = "https://laserstream-mainnet-fra.helius-rpc.com"
+# Leave empty to use https://mainnet.helius-rpc.com/?api-key=$HELIUS_API_KEY
+rpc_url = ""
+jito_block_engine = "https://mainnet.block-engine.jito.wtf/api/v1/bundles"
+# Suggested addresses only. Each Telegram user builds their own list with /watch.
+wallets = [
+    "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+    "2CQgjcdNEo7WtbQLpJTAVcC3Ga61pNvRDTgP5grzctFG",
+]
+denylist_mints = []
+max_sol = 0.05
+cooldown_ms = 2000
+our_pubkey = "So11111111111111111111111111111111111111112"
+tip_floor_sol = 0.001
+tip_mid_sol = 0.003
+tip_high_sol = 0.008
+max_tip_sol = 0.02
+telegram_allow_user_ids = []
+telegram_allow_usernames = ["toshirothe3rd", "Gambloorr"]
+telegram_chat_ids = []
